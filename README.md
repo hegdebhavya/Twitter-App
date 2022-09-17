@@ -75,5 +75,5 @@ go to http://localhost:8000
 #### Running Test Cases
 
 ```
-python manage.py tests
+python manage.py test
 ```

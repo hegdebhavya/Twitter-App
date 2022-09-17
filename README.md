@@ -48,9 +48,10 @@ We have written unit test cases to cover the following methods
 - Tweet delete
 - Tweet retrieve.
 
-## How to Run the Twitter App
+### Instructions to Run the Twitter App
 
-Setup the following keys in twitter/settings.py
+#### Setup the following keys in twitter/settings.py
+
 ```
 API_KEY='..'
 API_KEY_SECRET='..'
@@ -59,13 +60,20 @@ ACCESS_TOKEN_SECRET='..'
 BEARER_TOKEN = '..'
 ```
 
-## Install python Dependencies for django app
+#### Install python Dependencies for django app and run server
 
 ```
+
 pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 
 go to http://localhost:8000
+```
+
+#### Running Test Cases
+
+```
+python manage.py tests
 ```

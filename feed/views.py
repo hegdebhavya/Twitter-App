@@ -28,12 +28,12 @@ def index(request):
             text=content
             )
             tweeturl= "https://twitter.com/user/status/{}".format(str(response.data['id']))
-            #print(f"https://twitter.com/user/status/{response.data['id']}")
+            
             print(tweeturl)
             context ={"tweeturl":tweeturl}
             return render(request,'feed/successful.html',context)
         
-        ## Darshini Venkatesha Murthy Nag Contribution##
+        # Darshini Venkatesha Murthy Nag Contribution #
         if ID:
             print('ID:', ID)
             client= tweepy.Client(
@@ -45,21 +45,21 @@ def index(request):
             print("Tweet deleted")
             return redirect('delete.html')
 
-        ## Sirisha Polisetty Contribution ##
+        # Sirisha Polisetty Contribution #
 
         if getQuery:
             print('getQuery',getQuery)
             bearer_token = settings.BEARER_TOKEN         
             client = tweepy.Client(bearer_token)
             response=client.search_recent_tweets(getQuery,max_results=10)
-            #print(response.meta)
+            
             tweets=response.data
             tweet_dict={}
             for tweet in tweets:
                 tweet_dict.update({int(tweet.id):tweet.text})
-            #print(tweet_dict)
+            
             tmp_dict = {"tweet_dict":tweet_dict}
-            #tmp_dict = {"message":"Hello world!"}
+            
             return render(request,'feed/returntweets.html',tmp_dict)
         
 

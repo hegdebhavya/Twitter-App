@@ -40,7 +40,7 @@ On click of submit button, the tweet is deleted successfully and a message is di
 Enter the search keyword to retrieve tweets for that keyword. On click of submit button  list of tweets is displayed. 
 
 ## Testing Setup Details:
-We have used the python unittest framework as our codebase is in python django.[feed/tests.py]
+We have used the python unittest framework as our codebase is in python django[feed/tests.py].
 We have written unit test cases to cover the following methods
 
 - Website response

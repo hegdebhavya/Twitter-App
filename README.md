@@ -5,7 +5,7 @@
 **Team Members**: Bhavya Hegde, Darshini Venkatesha Murthy Nag, Sirisha Polisetty.
 
 ## Problem Statement: 
-1. Develop a simple twitter service that implement any Twitter API to to programmatically create, retrieve and delete a Tweet
+1. Develop a simple twitter service that implement any Twitter API to programmatically create, retrieve and delete a Tweet
 2. Develop a simple Web UI that  implements your service and demonstrates the functions.
 
 ## Twitter Developer Account Setup 
